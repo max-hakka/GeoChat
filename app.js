@@ -1,4 +1,20 @@
 (function() {
+  if (window.DeviceOrientationEvent) {
+    window.addEventListener('deviceorientation', function(event) {
+
+      var compassdir;
+      if(event.webkitCompassHeading) {
+        // Apple works only with this, alpha doesn't work
+        compassdir = event.webkitCompassHeading; 
+      }else {
+        compassdir = event.alpha;
+      }
+      if(compassdir>=315 || compassdir <=45){
+        alert("hello");
+      }
+      //navigator.geolocation.watchPosition(success,error, options);
+    });
+  }
 
   var output = document.querySelector('#output'),
     input = document.querySelector('#input'),
