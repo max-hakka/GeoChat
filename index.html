@@ -1,16 +1,29 @@
-<header>
-  <h1>Super Duper Simple Chat</h1>
-  <h2>Powered by PubNub</h2>
-</header>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="app.js"></script>
+		<script type="text/javascript">
+			presence = document.querySelector('.face12');
 
-<section id="main" role="main">
-  <div id="chat">
-    <i id="avatar" class="face12"></i>
-    <input type="text" id="input" placeholder="Type your message..."> 
-    <button id="button">Send</button>
-  </div>
-  
+ alert(presence);
+		</script>
+	</head>
+	<body>
+		<header>
+		  <h1>Super Duper Simple Chat</h1>
+		  <h2>Powered by PubNub</h2>
+		</header>
 
-  <p id="presence"></p>
-  <div id="output"></div>
-</section>
+		<section id="main" role="main">
+		  <div id="chat">
+		    <i id="avatar" class="face12"></i>
+		    <input type="text" id="input" placeholder="Type your message..."> 
+		    <button id="button">Send</button>
+		  </div>
+		  
+
+		  <p id="presence"></p>
+		  <div id="output"></div>
+		</section>
+	</body>
+</html>
